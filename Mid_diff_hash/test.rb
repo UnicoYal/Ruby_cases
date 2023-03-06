@@ -34,7 +34,7 @@ RSpec.describe Case do
         { band: 'AC/DC', song: 'Shoot to Thrill' }
       ]
   
-      expect { plainify(data) == expected }
+      expect(described_class.plainify(data)).to eq(expected)
     end
   end
 end

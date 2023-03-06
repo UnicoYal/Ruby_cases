@@ -2,7 +2,7 @@
 
 module Iterator
 
-  def average first, last
+  def self.average(first, last)
     sum = 0.0
     first.upto(last) {|el| sum += el}
     sum/(last-first+1)

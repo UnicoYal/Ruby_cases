@@ -2,7 +2,7 @@
 
 # Case
 module Destruct
-  def convert(data)
+  def self.convert(data)
     data.map { |lang, _, strength| [lang, strength] }
   end
 end

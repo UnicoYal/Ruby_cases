@@ -2,7 +2,7 @@
 
 module Types
 
-  def type_of_type value
+  def self.type_of_type(value)
     [Hash, Array, Range].include?(value.class) ? :complex : :simple
   end
 

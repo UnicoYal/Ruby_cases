@@ -24,7 +24,7 @@ RSpec.describe ArrTimes do
       ]
 
       actual1 = described_class.sort_cases(data1)
-      expect { actual1 == expected1 }
+      expect(actual1).to eq(expected1) 
     end
   end
 end

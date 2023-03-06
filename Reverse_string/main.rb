@@ -2,7 +2,7 @@
 
 module Reverse
 
-  def reverse some_string
+  def self.reverse some_string
     res = ''
     some_string.each_char do |c|
       res = "#{c}#{res}"

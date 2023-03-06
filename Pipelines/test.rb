@@ -26,7 +26,7 @@ RSpec.describe Pipe do
         '1999' => 1
       }
 
-      expect { get_men_count_by_year(users) == expected }
+      expect(described_class.get_men_count_by_year(users)).to eq(expected)
     end
   end
 end

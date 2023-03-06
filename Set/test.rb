@@ -17,7 +17,7 @@ RSpec.describe Sets do
         zero: 'added'
       }
   
-      expect { actual == expected }
+      expect(actual).to eq(expected)
     end
   end
 end

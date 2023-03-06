@@ -19,7 +19,7 @@ RSpec.describe Destruct do
         %w[kotlin strong]
       ]
   
-      expect { convert(data) == expected }
+      expect(described_class.convert(data)).to eq(expected)
     end
   end
 end

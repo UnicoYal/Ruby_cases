@@ -5,9 +5,9 @@ require_relative 'main'
 RSpec.describe MyFilter do
   describe 'function' do
     it 'should works' do
-      expect { my_filter([1, 2], &:even?) == [2] }
-      expect { my_filter([1, 2, 3, 4], &:even?) == [2, 4] }
-      expect { my_filter([1, 2, 3, 4], &:odd?) == [1, 3] }
+      expect(described_class.my_filter([1, 2], &:even?)).to eq([2])
+      expect(described_class.my_filter([1, 2, 3, 4], &:even?)).to eq([2, 4])
+      expect(described_class.my_filter([1, 2, 3, 4], &:odd?)).to eq([1, 3])
     end
   end
 end

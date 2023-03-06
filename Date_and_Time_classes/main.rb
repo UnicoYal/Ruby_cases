@@ -3,7 +3,7 @@
 require 'date'
 
 module DateAndTime
-  def next_day
+  def self.next_day
     tomorrow = Date.today.next
     Time.new tomorrow.year, tomorrow.month, tomorrow.day
   end

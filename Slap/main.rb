@@ -2,7 +2,7 @@
 
 # Case
 module Slap
-  def merge_all(hash, *hashes)
+  def self.merge_all(hash, *hashes)
     hash.merge(*hashes)
   end
 end

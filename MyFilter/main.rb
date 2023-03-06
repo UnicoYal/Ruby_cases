@@ -2,7 +2,7 @@
 
 # Case
 module MyFilter
-  def my_filter(arr)
+  def self.my_filter(arr)
     res = []
     arr.each {|el| res << el if yield(el)}
     res

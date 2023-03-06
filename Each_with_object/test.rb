@@ -14,8 +14,8 @@ RSpec.describe ObjEach do
         'p' => ['people'],
         't' => ['to']
       }
-      expect { actual == expected }
-      expect { actual.keys == expected.keys }
+      expect(actual).to eq(expected)
+      expect(actual.keys).to eq(expected.keys)
     end
   end
 end

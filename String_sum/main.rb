@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Happy
-  def happy?(value)
+  def self.happy?(value)
     left_sum = 0
     rigth_sum = 0
     string_value = value.to_s

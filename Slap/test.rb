@@ -10,7 +10,7 @@ RSpec.describe Slap do
       hash3 = { key3: 'value3', key: 'new value' }
 
       result = { key: 'new value', key2: 'value2', key3: 'value3' }
-      expect { merge_all(hash1, hash2, hash3) == result }
+      expect(described_class.merge_all(hash1, hash2, hash3)).to eq(result)
     end
   end
 end

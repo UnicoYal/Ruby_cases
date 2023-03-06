@@ -6,7 +6,7 @@ RSpec.describe Conv do
   describe 'function' do
     it 'should works' do
       strings = ['wow?', 'One?', 'tWo!', 'THREE']
-      expect { convert(strings) == ['one?', 'wow?'] }
+      expect(described_class.convert(strings)).to eq(['one?', 'wow?'])
     end
   end
 end

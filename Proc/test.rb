@@ -8,8 +8,8 @@ RSpec.describe Blocks do
       proc1 = proc { |x| x + 1 }
       proc2 = proc { |x| x * 2 }
 
-      expect { apply_blocks(5, [proc1, proc2]) == 12 }
-      expect { apply_blocks(5, [proc2, proc1]) == 11 }
+      expect(described_class.apply_blocks(5, [proc1, proc2])).to eq(12)
+      expect(described_class.apply_blocks(5, [proc2, proc1])).to eq(11)
     end
   end
 end

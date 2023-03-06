@@ -13,7 +13,7 @@ RSpec.describe Hashes do
         'javascript' => 1,
         'go' => 3
       }
-      expect { get_words_count_by_lang(text) == expected }
+      expect(described_class.get_words_count_by_lang(text)).to eq(expected)
     end
   end
 end

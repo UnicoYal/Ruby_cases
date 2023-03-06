@@ -2,7 +2,7 @@
 
 # Case
 module Invert
-  def invert_case(some_string)
+  def self.invert_case(some_string)
     res = ''
     some_string.each_char do |c|
       new_char = c == c.upcase ? c.downcase : c.upcase
